@@ -1,0 +1,103 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: white;
+  color: black;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  max-width: 750px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+h1,
+h2 {
+  color: #000000;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+.task-form {
+  display: flex;
+  gap: 10px;
+  margin: 25px 0;
+}
+
+input:not([type="checkbox"]) {
+  padding: 10px;
+  border: 1px solid #999;
+  border-radius: 4px;
+}
+
+.task-form input {
+  flex: 1;
+  min-width: 0;
+}
+
+button {
+  padding: 9px 13px;
+  background: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #eeeeee;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.task-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow-wrap: anywhere;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #666;
+}
+
+.task-actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.error {
+  color: #b00020;
+}
+
+@media (max-width: 520px) {
+  .task {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .task-form {
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,27 @@
+# Git
+.git
+.gitignore
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Build outputs
+target/
+**/target/
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+
+# IDE and OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Documentation and CI/CD
+Jenkinsfile
+*.md
+frontend/Dockerfile.txt
